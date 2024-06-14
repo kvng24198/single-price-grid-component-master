@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Karla", sans-serif;
+    background-color:   hsl(204, 43%, 93%);
+    font-size: 16px;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+    border-radius: 10px;
+}
+.container::after{
+    content: "";
+    background-color:hsla(216, 22%, 67%, 0.062);
+    position: absolute;
+    width: 103%;
+    height: 104%;
+    z-index: -3;
+    justify-content: center;
+    left: -10px;
+    border-radius: 10px;
+}
+.container-1{
+    padding: 35px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    /* width: 1200px; */
+    /* align-items: center; */
+    
+}
+
+.content-1{
+    width: 50%;
+    padding: 35px;
+    background-color:  hsl(179, 62%, 43%);
+    color:   hsl(204, 43%, 93%);
+    border-bottom-left-radius: 5px;
+}
+.content-2{
+    width: 50%;
+    padding: 35px;
+    background-color: #49BEBD;
+    color:   hsl(204, 43%, 93%);
+    border-bottom-right-radius: 5px;
+
+}
+.join{
+    color:hsl(179, 62%, 43%) ;
+    margin-bottom: 25px;
+}
+h3{
+    color:  hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+    
+}
+.para{
+margin-bottom: 10px;
+color:   hsl(218, 22%, 67%);
+font-size: 15px;
+}
+.sub{
+    color: white;
+    font-size: 19px;
+    padding-bottom: 25px;
+}
+.price{
+/* display: flex; */
+padding-bottom: 10px;
+}
+.amount{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-right: 10px;
+}
+.day{
+    color:white;
+    padding-bottom: 30px;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    color:white ;
+    width: 240px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+.heading{
+    font-size: 19px;
+    color:white;
+    padding-bottom: 25px;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-bottom: 1px;
+}
+/* media query */
+@media (max-width: 375px){
+    .body{
+        width: 375px;
+    }
+    .container{
+        width: 95%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .container-1{
+        width: 90%;
+        align-items: center;
+    }
+    .content{
+        width: 90%;
+        flex-direction: column;
+    }
+    .content-1{
+        width: 100%;
+    }
+    .content-2{
+        width: 100%;
+    }
+}
