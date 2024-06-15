@@ -116,9 +116,9 @@ li{
     padding-bottom: 1px;
 }
 /* media query */
-@media (max-width: 375px){
+@media (max-width: 376px){
     .body{
-        width: 375px;
+        width: 376px;
     }
     .container{
         width: 95%;
